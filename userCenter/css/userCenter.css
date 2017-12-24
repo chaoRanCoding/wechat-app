@@ -1,0 +1,118 @@
+
+/*个人信息*/
+.userInfo{
+	margin-bottom: 0.1rem !important;
+}
+
+.userInfo .userImg{
+	height: 0.42rem;
+	width: 0.42rem;
+	display: block;
+	border-radius: 6px;
+}
+
+.userInfo .userName{
+	flex:1;
+	font-size: 0.13rem;
+	padding-left: 0.1rem;
+	box-sizing:border-box;
+}
+
+/*公共列表*/
+.userItem{
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 1px;
+    display: flex;
+    padding: 0.1rem;
+    box-sizing:border-box;
+    align-items:center;
+}
+
+/*右侧按钮*/
+.rightArrow{
+	display: inline-block;
+	height: 0.135rem;
+	width: 0.075rem;
+}
+
+/*开关列表*/
+.switchItem .iconImg{
+	height: 0.2rem;
+	width: 0.2rem;
+	border-radius: 50%;
+}
+.switchItem .switchName{
+	flex:1;
+	font-size: 0.13rem;
+	padding-left: 0.1rem;
+	box-sizing:border-box;
+	height: 25px;
+	line-height: 25px;
+}
+/*开关样式*/
+.switchBtn{
+	display: inline-block;
+	width: 60px;
+	height: 25px;
+	background-image: url(../../../common/images/switchBtn.png);
+	background-size: 60px auto;
+	background-repeat: no-repeat;
+	box-sizing:box-sizing;
+	background-position-x:center;
+}
+/*开关打开*/
+.switchOpen{
+	background-position-y: -4px;
+}
+
+/*开关关闭*/
+.switchClose{
+	background-position-y:-32px;
+}
+
+/*开关有订单*/
+.switchHasOrder{
+	background-position-y: -62px;
+}
+/*开关不在线*/
+.switchOffLine{
+	background-position-y: -89px;
+}
+/*功率开关样式*/
+.powerBtn{
+	display: inline-block;
+	width: 60px;
+	height: 25px;
+	background-image: url(../images/powerBtn.png);
+	background-size: 60px auto;
+	background-repeat: no-repeat;
+	box-sizing:border-box;
+	background-position-x:center;
+}
+/*15KW打开*/
+.powerBtn15O{
+	background-position-y:-5px;
+}
+/*15KW关闭*/
+.powerBtn15C{
+	background-position-y: -61px;
+}
+/*35KW打开*/
+.powerBtn35O{
+	background-position-y: -32px;
+}
+/*35KW关闭*/
+.powerBtn35C{
+	background-position-y: -89px;
+}
+/*不在线*/
+.offLine{
+	background-position-y:-146px;
+}
+/*有订单*/
+.hasOrder{
+	background-position-y:-119px;
+}
+
+

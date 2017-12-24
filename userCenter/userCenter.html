@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="惠充电">
+<title>个人中心</title>
+<link rel="stylesheet" href="../../common/css/weui.min.css"/>
+<link rel="stylesheet" href="../../common/css/main.css"/>
+<link rel="stylesheet" href="./css/userCenter.css"/>
+</head>
+<body>
+<!-- 数据加载模态窗口 -->
+<div id="loadingToast" style="display:none;">
+<div class="weui-mask_transparent"></div>
+<div class="weui-toast">
+    <i class="weui-loading weui-icon_toast"></i>
+    <p class="weui-toast__content">请稍等...</p>
+</div>
+</div>
+
+<!-- 头部 -->
+<div class="head" >个人中心</div>
+
+<!-- 中间显示区域 -->
+<div class='main'>
+	<!-- 个人信息 -->
+	<div class='userInfo userItem'>
+		<!-- 用户头像 -->
+		<img class='userImg' src="" onerror="this.src='./images/userImg.png'"/>
+		<!-- 用户昵称，电话 -->
+		<span class='userName'></span>
+		<img class='rightArrow' src="../../common/images/rightArrow.png"/>
+	</div>
+	<!-- 功能列表开关 -->
+		<!-- 开关 -->
+	<div id="switch" class='switchItem userItem' style='display:none;'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/switch.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>开关</span>
+		<span id='switchButton' class='switchBtn switchClose'></span>
+
+	</div>
+		<!-- 可调功率 -->
+	<div id='power' class='switchItem userItem' style='display:none;'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/power.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>可调功率</span>
+		<span id='powerButton' class='powerBtn offLine'></span>
+
+	</div>
+			<!-- 半价电 -->
+	<div id='hrefPrice' class='switchItem userItem' style='display:none;'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/hrefPrice.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>定时开关</span>
+		<span id='hrefPriceButton' class='switchBtn switchClose'></span>
+
+	</div>
+		<!-- 共享 -->
+	<div id='share' class='switchItem userItem' style='display:none;'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/share.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>共享</span>
+		<span id='shareButton' class='switchBtn switchClose'></span>
+
+	</div>
+		<!-- 我的收益 -->
+	<div id='profit' class='switchItem userItem profit' style='display:none;'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/profit.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>我的收益</span>
+		<img class='rightArrow' src="../../common/images/rightArrow.png"/>
+
+	</div>
+	<!-- 我的钱包 -->
+	<div id='wallet' class='switchItem userItem'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/wallet.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>我的钱包</span>
+		<img class='rightArrow' src="../../common/images/rightArrow.png"/>
+
+	</div>
+		<!-- 我的订单 -->
+	<div id='orders' class='switchItem userItem'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/orders.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>我的订单</span>
+		<img class='rightArrow' src="../../common/images/rightArrow.png"/>
+
+	</div>
+		<!-- 相关活动 -->
+	<div id='active' class='switchItem userItem'>
+		<!-- 图标头像 -->
+		<img class='iconImg' src="./images/active.png"/>
+		<!-- 开关名称 -->
+		<span class='switchName'>云盒免费领</span>
+		<img class='rightArrow' src="../../common/images/rightArrow.png"/>
+
+	</div>
+
+</div>
+
+<!-- 底部导航栏 -->
+<div id='tabbar'>
+	<!-- 首页 -->
+	<div class='tabbarItem' onclick="window.location.href='../../index_F.php'">
+		<image class='ionicImage' src="../../common/images/homeB.png"></image>
+		<span class='ionicName'>首页</span>
+	</div>
+	<!-- 充电状态 -->
+	<div class='tabbarItem' onclick="window.location.href='../../isCharging/index.php'">
+		<image class='ionicImage' src="../../common/images/chargeState.png"></image>
+		<span class='ionicName'>充电状态</span>
+	</div>
+	<!-- 个人中心 -->
+	<div class='tabbarItem' >
+			<image class='ionicImage' src="../../common/images/userCenterB.png"></image>
+			<span class='ionicName blue'>个人中心</span>
+	</div>
+</div>
+<script src="../../common/js/require.js"  data-main="./js/main.js"></script>
+</body>
+</html>
